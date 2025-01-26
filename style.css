@@ -1,0 +1,247 @@
+:root {
+  --clr-bg-hero-foot: #1f2937;
+  --clr-hero-main-text: #f9faf8;
+  --clr-hero-secondary-link: #e5e7eb;
+  --clr-hero-logo-text: #f9faf8;
+  --clr-btt-bg-color: #3882f6;
+  --clr-head-tx-inf: #1f2937;
+  --clr-quot-bg: #e5e7eb;
+  --clr-quot-tx: #1f2937;
+
+  --font-primary: "Roboto", serif;
+  --font-normal: 400;
+  --font-weight-hero: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-normal);
+  line-height: 1.2;
+}
+
+main {
+  background-color: #fff;
+}
+
+header {
+  background-color: var(--clr-bg-hero-foot);
+}
+
+.container-header {
+  height: 70px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-right: 2.5rem;
+  margin-top: 20px;
+}
+
+.navbar:first-child {
+  justify-content: space-between;
+}
+
+.navbar li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navbar li a {
+  color: var(--clr-hero-secondary-link);
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 17px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 2.5rem;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+}
+
+.flex-item img {
+  margin-bottom: 80px;
+}
+
+.text-flex {
+  justify-content: center;
+  align-items: center;
+  flex-basis: 300px;
+  margin-bottom: 30px;
+}
+
+.text-flex p {
+  color: var(--clr-hero-secondary-link);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.random-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 700px;
+  margin: 0 -20px 0 -19px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.info-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-items img {
+  margin-left: 20px;
+  object-fit: cover;
+  height: 200px;
+}
+
+ion-icon {
+  font-size: 3.5rem;
+  margin-left: 4rem;
+  margin-top: 20px;
+}
+
+.text-flex button {
+  color: var(--clr-hero-main-text);
+  padding: 7px;
+  width: 90px;
+  background-color: var(--clr-btt-bg-color);
+  border: none;
+  border-radius: 10%;
+  font-weight: bold;
+}
+
+button:hover {
+  transition: 0.5s;
+  background-color: #03045e;
+}
+
+button:active {
+  background-color: #0081a7;
+}
+
+h1 {
+  font-weight: var(--font-weight-hero);
+  color: var(--clr-hero-main-text);
+  margin-bottom: 9px;
+}
+
+h2 {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+  margin-left: 25px;
+  font-size: 1rem;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  background-color: var(--clr-quot-bg);
+  width: 100%;
+  font-style: italic;
+  color: var(--clr-quot-tx);
+  font-size: 20px;
+  text-align: center;
+  height: 250px;
+}
+
+.quote p {
+  margin: 2rem 3.8rem;
+}
+
+span {
+  font-weight: bold;
+  float: right;
+  margin: 35px 5rem;
+  font-size: 18px;
+}
+
+.call-action-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  background-color: var(--clr-btt-bg-color);
+  height: 110px;
+  width: 700px;
+  gap: 1rem;
+  border-radius: 2%;
+  color: var(--clr-hero-logo-text);
+}
+
+.call-action-container p {
+  font-size: 15px;
+}
+
+.button-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.last-button {
+  padding: 4px;
+  width: 90px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 7%;
+  height: 30px;
+  background-color: var(--clr-btt-bg-color);
+}
+
+.last-button:hover {
+  transition: 1s;
+  background-color: #003049;
+}
+
+.last-button:active {
+  background-color: #005f73;
+  font-size: 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5rem;
+  text-align: center;
+  background-color: var(--clr-bg-hero-foot);
+  color: var(--clr-hero-logo-text);
+  height: 50px;
+  font-size: 15px;
+}
